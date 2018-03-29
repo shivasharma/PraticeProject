@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PraticeProject", "PraticePr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PraticeProject.Tests", "PraticeProject.Tests\PraticeProject.Tests.csproj", "{1DE17E99-F393-499F-8FC1-6428DF42AB7A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoTypeDesignPattern", "ProtoTypeDesignPattern\ProtoTypeDesignPattern.csproj", "{AEB7D6A3-3D38-43B1-87C6-E93AF0A585D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridegeDesignPattern", "BridegeDesignPattern\BridegeDesignPattern.csproj", "{0A989D9D-B9AA-44A0-98C6-393CC52DDB36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{1DE17E99-F393-499F-8FC1-6428DF42AB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DE17E99-F393-499F-8FC1-6428DF42AB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DE17E99-F393-499F-8FC1-6428DF42AB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEB7D6A3-3D38-43B1-87C6-E93AF0A585D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEB7D6A3-3D38-43B1-87C6-E93AF0A585D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEB7D6A3-3D38-43B1-87C6-E93AF0A585D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEB7D6A3-3D38-43B1-87C6-E93AF0A585D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A989D9D-B9AA-44A0-98C6-393CC52DDB36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A989D9D-B9AA-44A0-98C6-393CC52DDB36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A989D9D-B9AA-44A0-98C6-393CC52DDB36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A989D9D-B9AA-44A0-98C6-393CC52DDB36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
