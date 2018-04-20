@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../../Scripts/knockout-3.4.2.js"></script>
+</head>
+<body>
+    <h2>Data KO</h2>
+
+    <input type="text" data-bind="value:name" />
+    <select data-bind="options:riskChoices, value:risk"></select></hr>
+    <div data-bind="text:formatted"></div>
+    <per data-bind="text:ko.toJSON($root,2,null)"></per>
+</body>
+
+<script>
+    var Mission = function (data) {
+        data = data || {};
+        this.name = ko.observable(data.name);
+        this.riskChoices = data.choices;
+        this.risk = ko.observable(data.risk);
+        this.formatted = ko.computed(this.getFormatted, this)
+    };
+
+    ko.utils.extend(Mission.prototype, {
+        getFormatted: function () {
+            return this.name() + "(" + this.risk() + ")";
+        }
+    });
+
+    var newMission = new Mission({ name: "Free Village", risk: "High", choices: ["Low", "Medium", "High"] });
+
+    ko.applyBindings(newMission);
+</script>
+</html>

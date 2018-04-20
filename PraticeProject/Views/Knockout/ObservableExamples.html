@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../../Scripts/knockout-3.4.2.js"></script>
+</head>
+<body>
+    <section>
+        Record<div data-bind="text:people().length"></div>
+        <ul data-bind="foreach:people">
+            <li>
+                <span data-bind="text:name"></span>
+                <input data-bind="value:name" />
+            </li>
+        </ul>
+    </section>
+</body>
+
+<script>
+    var Person = function (name) {
+        this.name = ko.observable(name);
+    };
+    var viewModel = (function () {
+        var p1 = new Person("Haley");
+        var p2 = new Person("Ely");
+        var peopleFoo = ko.observableArray([p1, p2])
+        return {
+            people: peopleFoo
+        };
+    })();
+    ko.applyBindings(viewModel);
+</script>
+</html>

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../../Scripts/knockout-3.4.2.js"></script>
+</head>
+<body>
+    <h2>Account Detail</h2>
+    id:<span data-bind="text:Id"></span><br />
+    Name:<span data-bind="text:Name"></span><br />
+    Balance:<span data-bind="text:Balance"></span>
+    <input type="button" value="showDetails" id="showButtons" data-bind="click:showBalance" />
+    <hr />
+    New Balance: <input type="text" data-bind="value:Balance" />
+</body>
+
+<script>
+    //This is model
+    function Account(id, name, balance) {
+        this.Id = id;
+        this.Name = name;
+        this.Balance = balance;
+    }
+    //This is viewModel
+    function AccountViewModel(acc) {
+        this.Id = acc.Id;
+        this.Name = acc.Name;
+        this.Balance = ko.observable(acc.Balance);
+        this.showBalance = function () {
+            alert(accViewModel.Id + " " + accViewModel.Balance())
+        };
+    }
+
+    var acc = new Account(1, "A1", 10000)
+    var accViewModel = new AccountViewModel(acc);
+    ko.applyBindings(accViewModel);
+</script>
+</html>

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../../Scripts/knockout-3.4.2.js"></script>
+</head>
+<body>
+    <h2>Data KO</h2>
+
+    <input type="text" data-bind="value:name" />
+    <select data-bind="options:riskChoices, value:risk"></select></hr>
+    <div data-bind="text:formatted"></div>
+</body>
+
+<script>
+    var Mission = function (name, risk, choices) {
+        this.name = ko.observable(name);
+        this.riskChoices = choices;
+        this.risk = ko.observable(risk);
+        this.formatted = ko.computed(function () {
+            return this.name() + "(" + this.risk() + ")";
+        }, this);
+    };
+
+    var newMission = new Mission("Free Village", "High", ["Low", "Medium", "High"]);
+
+    ko.applyBindings(newMission);
+</script>
+</html>

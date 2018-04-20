@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../../Scripts/knockout-3.4.2.js"></script>
+</head>
+<body>
+    <h2>Baisc KO</h2>
+    <div data-bind="text:formatted"></div><hr />
+    <input type="text" data-bind="value:name" />
+    <button data-bind="click:showName">ShowName</button>
+</body>
+
+<script>
+    var mission = {
+        name: ko.observable("Free Village"),
+        risk: "High",
+        showName: function () {
+            alert(mission.name())
+        }
+    };
+
+    mission.formatted = ko.computed(function () {
+        return mission.name() + "(" + mission.risk + ")"
+    });
+
+    ko.applyBindings(mission);
+</script>
+</html>
