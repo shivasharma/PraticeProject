@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Knockout Guitars</h1>
+    <section>
+        <label>
+            <input data-bind="checked: displayGuitars" type="checkbox" />
+            Display Guitars
+        </label>
+        <div data-bind="fadeVisible: displayGuitars(), fadeDuration: 250">
+            <ul data-bind="foreach: products">
+                <li>
+                    <span data-bind="text: model"></span>
+                </li>
+            </ul>
+        </div>
+        <div data-bind="dump: $data, enable: false"></div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+
+    <script src="binding-dump.js"></script>
+    <script src="binding-fadevisible.js"></script>
+    <script src="product.js"></script>
+    <script src="mockdata.js"></script>
+    <script src="viewmodel.js"></script>
+</body>
+</html>

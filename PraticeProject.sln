@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoTypeDesignPattern", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridegeDesignPattern", "BridegeDesignPattern\BridegeDesignPattern.csproj", "{0A989D9D-B9AA-44A0-98C6-393CC52DDB36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnockoutPratice", "WebApplication1\KnockoutPratice.csproj", "{A910CBA7-F409-43EA-82EA-BE53C419400C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pratice.DataLayer", "Pratice.DataLayer\Pratice.DataLayer.csproj", "{CD929765-09B6-4BD1-9498-CDF63A90F268}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{0A989D9D-B9AA-44A0-98C6-393CC52DDB36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A989D9D-B9AA-44A0-98C6-393CC52DDB36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A989D9D-B9AA-44A0-98C6-393CC52DDB36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A910CBA7-F409-43EA-82EA-BE53C419400C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A910CBA7-F409-43EA-82EA-BE53C419400C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A910CBA7-F409-43EA-82EA-BE53C419400C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A910CBA7-F409-43EA-82EA-BE53C419400C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD929765-09B6-4BD1-9498-CDF63A90F268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD929765-09B6-4BD1-9498-CDF63A90F268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD929765-09B6-4BD1-9498-CDF63A90F268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD929765-09B6-4BD1-9498-CDF63A90F268}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

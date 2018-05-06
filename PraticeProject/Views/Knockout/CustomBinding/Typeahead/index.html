@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Knockout Typeahead</h1>
+    <section>
+        <ul data-bind="foreach:people">
+            <li>
+                <span data-bind="text:firstName"></span>
+                <span data-bind="text:lastName"></span>
+                <input type="text"
+                       data-bind=" value:movie,attr:{'data-provider':'typeahead','data-items':2, 'data-source':$parent.moviesJSON}" />
+
+                <!--<input type="text" data-bind="value:movie, typeahead:$parent.movies" />-->
+            </li>
+        </ul>
+        <div data-bind="dump:$data"></div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>
+    <script src="binding-dump.js"></script>
+    <script src="viewmodel.js"></script>
+</body>
+</html>
