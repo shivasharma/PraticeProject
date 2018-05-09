@@ -26,13 +26,13 @@ namespace PraticeProject.Controllers
 
         public ActionResult Index()
         {
-            //var db = new PaticeContext();
-            //var customer = new Customer()
-            //{
-            //    Name = "Shiva"
-            //};
-            //db.Customers.Add(customer);
-            //db.SaveChanges();
+            var db = new PaticeContext();
+            var customer = new Customer()
+            {
+                Name = "Shiva"
+            };
+            db.Customers.Add(customer);
+            db.SaveChanges();
 
             return View();
         }
